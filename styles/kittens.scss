@@ -1,0 +1,26 @@
+.carousel {
+  &__list {
+    width: 70%;
+    padding: 0px;
+    height: 300px;
+    display: flex;
+    margin: 50px auto;
+    overflow-x: scroll;
+    align-items: center;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    @media screen and (max-width: 500px) {
+      height: 100%;
+      flex-direction: column;
+    }
+  }
+  &__item {
+    margin: 5px;
+    transition: all 0.5s;
+    list-style-type: none;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
